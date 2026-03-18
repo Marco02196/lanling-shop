@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蓝凌商城</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Sora:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="logo">蓝凌</div>
+        <nav class="nav">
+          <a href="index.html">首饰预览</a>
+          <a href="cart.html">购物车 (<span data-cart-count>0</span>)</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-card">
+          <h1>挑一件真正顺心的首饰</h1>
+          <p>
+            为日常、通勤与重要时刻准备的三套精选风格。我们挑好材质与工艺，你只需要选择心动款式。
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>48h</strong>
+              快速发货
+            </div>
+            <div class="stat">
+              <strong>7 天</strong>
+              无忧退换
+            </div>
+            <div class="stat">
+              <strong>终身</strong>
+              保养清洁
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>春季首饰企划</h2>
+          <p>满 2000 元包邮，满 3000 元再减 150 元。</p>
+          <a class="btn btn-primary" href="cart.html">去看看购物车</a>
+          <button class="btn btn-outline" style="margin-left: 12px;">获取搭配建议</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">首饰上新</div>
+        <div class="products" data-products></div>
+      </section>
+
+      <footer class="footer">
+        精选首饰 · 当季现货 · 蓝凌直营
+      </footer>
+    </div>
+
+    <div class="toast">已加入购物车</div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>购物车 · 蓝凌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Sora:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="logo">蓝凌</div>
+        <nav class="nav">
+          <a href="index.html">继续逛逛</a>
+          <a href="cart.html">购物车 (<span data-cart-count>0</span>)</a>
+        </nav>
+      </header>
+
+      <section class="section">
+        <div class="section-title">购物车</div>
+        <div class="cart-layout">
+          <div>
+            <div class="cart-list" data-cart-list></div>
+            <div class="empty" data-cart-empty style="display: none;">
+              购物车还是空的，去首饰预览页挑一台吧。
+              <div style="margin-top: 16px;">
+                <a class="btn btn-primary" href="index.html">返回商品页</a>
+              </div>
+            </div>
+          </div>
+          <aside class="summary" data-summary></aside>
+        </div>
+      </section>
+
+      <footer class="footer">
+        订单支持支付宝 / 微信 / 对公转账
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
